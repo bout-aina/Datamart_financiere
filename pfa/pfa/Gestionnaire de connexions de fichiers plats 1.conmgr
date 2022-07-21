@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Gestionnaire de connexions de fichiers plats 1"
+  DTS:DTSID="{AF376BF5-C8BD-4847-A38A-C53CBB22240B}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x003B_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\Users\lenovo\OneDrive - Ecole Marocaine des Sciences de l'Ingénieur\Bureau\client\F_ACAHTLOGICIEL.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Date_Achat_FK"
+          DTS:DTSID="{F1C33117-222B-4025-9548-36EE15F88A44}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Fournisseur_FK"
+          DTS:DTSID="{43F3C0AD-DBA2-48AD-96B4-002228D28B96}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Logiciel_FK"
+          DTS:DTSID="{DEC879CE-4663-4E1C-B51C-1F18E51BA422}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CA"
+          DTS:DTSID="{8088D154-4286-4087-A52E-E93DE6DAD9FB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Quantite"
+          DTS:DTSID="{1CA89325-7013-41D7-B96A-3A45A8EBB485}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

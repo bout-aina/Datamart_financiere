@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Gestionnaire de connexions de fichiers plats"
+  DTS:DTSID="{6CB5FF95-A6DF-41CA-838E-B2652118987D}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x003B_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\Users\lenovo\OneDrive - Ecole Marocaine des Sciences de l'Ingénieur\Bureau\client\F_VENTELOGICIEL.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DATE_VENTE_FK"
+          DTS:DTSID="{0646D5E1-B0E6-4F5D-80FE-A7262394BAE3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CLIENT_FK"
+          DTS:DTSID="{FD242CF1-F7B6-4ED3-B4B0-D17C36B951C8}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="LOGICIEL_FK"
+          DTS:DTSID="{D6EBB0AD-FE9F-430A-AFB7-F4E74BBB2E7F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CA_VENTELOGICIEL"
+          DTS:DTSID="{09514E2E-7804-4EA9-AE8C-EB313940F0AB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x003B_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="MARGE_VENTELOGICIEL"
+          DTS:DTSID="{3C895F6C-2A49-4D35-A863-19A047DD2D18}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="19"
+          DTS:TextQualified="True"
+          DTS:ObjectName="QUANTITE"
+          DTS:DTSID="{50DE6993-D7DB-40E7-BDDE-044941C7DC4E}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,65 @@
+create table DEPARTEMENT (
+	Departement_PK number IDENTITY(1,1) PRIMARY KEY,
+	id_Departement varchar2(10) NOT NULL ,
+	nom varchar2(30) NOT NULL 
+
+);
+
+create table TEMPS(
+        Temps_PK NUMBER PRIMARY KEY auto increment,
+        date Date_Temps NOT NULL ,
+        Annee VARCHAR2 (20) NOT NULL ,
+        Mois VARCHAR2 (20) NOT NULL ,
+        Jour VARCHAR2 (20) NOT NULL ,
+
+);
+
+create table GEOGRAPHIE(
+	Geographie_PK number IDENTITY(1,1) PRIMARY KEY,
+	Id_Geographie varchar2(10) NOT NULL ,
+	ville varchar2(15) NOT NULL ,
+	Code_postal number NOT NULL 
+);
+
+create table LOGICIEL(
+	Logiciel_PK number IDENTITY(1,1) PRIMARY KEY,
+	Departement_FK number NOT NULL ,
+	idLogiciel varchar2(10) NOT NULL ,
+	Nom VARCHAR2(20) NOT NULL ,
+	Refe VARCHAR2(20) NOT NULL ,
+	Descr VARCHAR2(20) NOT NULL ,
+	Vrsion VARCHAR2(20) NOT NULL ,
+	Prix_Achat VARCHAR2(20) NOT NULL ,
+	Prix_Vente VARCHAR2(20) NOT NULL ,
+
+	CONSTRAINT FK_DEPARTEMENT FOREIGN KEY (Departement_FK)
+);
+
+create table F_VENTELOGICIEL (
+
+DATE_VENTE_FK number NOT NULL ,
+CLIENT_FK number NOT NULL ,
+LOGICIEL_FK number NOT NULL ,
+CA_VENTELOGICIEL   NUMBER (9,2)   NOT NULL ,
+MARGE_VENTELOGICIEL NUMBER (9,2)  NOT NULL ,
+QUANTITE NUMBER (9,2) NOT NULL ,
+CONSTRAINT FK_DATE_VENTE FOREIGN KEY (DATE_VENTE_FK ),
+CONSTRAINT FK_CLIENT FOREIGN KEY (CLIENT_FK),
+CONSTRAINT FK_Logiciel FOREIGN KEY (Logiciel_FK)
+
+
+);
+create table CLIENT (
+Client_PK NUMBER IDENTITY(1,1) PRIMARY KEY,
+Geographie_FK NUMBER NOT NULL ,
+IdClient VARCHAR2(20) NOT NULL,
+Nom	VARCHAR2(20)  NOT NULL,
+Email	VARCHAR2(20)  NOT NULL,
+NumGsm	VARCHAR2(20)  NOT NULL,
+Fax	VARCHAR2(20)   NOT NULL,
+NumTelFix	VARCHAR2(20)  NOT NULL,
+LibelleActivite	VARCHAR2(20)   NOT NULL,
+
+
+CONSTRAINT FK_Geographie FOREIGN KEY (Geographie_FK )
+);
